@@ -1,0 +1,115 @@
+/* === Style général === */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f8;
+  margin: 0;
+  padding: 0;
+  color: #111;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* === Header === */
+header {
+  background-color: #0b63a5;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Sections === */
+section {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  color: #666;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  background-color: #e2e8f0;
+  }
+  /* ===== Menu mobile ===== */
+#nav-toggle {
+  display: none; /* caché sur grand écran */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media(max-width:780px){
+  header nav {
+    display: none;           /* cache le menu par défaut sur petit écran */
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  header nav.open {
+    display: flex;           /* menu visible quand on clique sur le bouton */
+  }
+  #nav-toggle {
+    display: block;          /* bouton visible sur petit écran */
+}
+}
+.work-example {
+  background-color: #e8f0fe;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);}
+
+.work-example h3 {
+  margin-top: 0;
+  }
+  form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #0b63a5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #084a7a;
+}
+
